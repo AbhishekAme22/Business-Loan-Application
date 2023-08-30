@@ -1,0 +1,303 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>Business Loan Application</title>
+  <link rel="stylesheet" type="text/css" href="style.css">
+</head>
+<body>
+ 
+
+
+ 
+  <script src="frontend.js"></script>
+
+
+  <!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Loan Portal</title>
+    <link rel="stylesheet" type="text/css" href="style.css">
+
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:wght@200;300;400;500;600;700;800&display=swap" rel="stylesheet">
+<script src="frontend.js"></script>
+
+<body>
+<div class="container">
+   
+
+    <main class="main-content">
+        <div class="top-container">
+            <h2 class="sidebar__logo-header">Business Loan Application</h2>    
+
+            
+            <div class="user-nav">
+               
+                <div class="user-info">
+                    
+                    <span class="user-name" >
+                        Abhishek Ame</span>   
+                     
+                </div>
+                   
+            </div>
+        </div>
+        <div class="bottom-container">
+            
+            <div class="bottom-container__left">
+                <div class="box transaction-box">
+                    <div class="header-container">
+                        <h3 class="section-header">Balance Sheet</h3>
+                        <div id="balanceSheet"></div>
+
+                        <div class="date-selector">
+                            <svg width="18" height="18" viewBox="0 0 18 18" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                <path d="M6 1.5V3.75" stroke="#292D32" stroke-width="1.5" stroke-miterlimit="10" stroke-linecap="round" stroke-linejoin="round"/>
+                                <path d="M12 1.5V3.75" stroke="#292D32" stroke-width="1.5" stroke-miterlimit="10" stroke-linecap="round" stroke-linejoin="round"/>
+                                <path d="M2.625 6.8175H15.375" stroke="#292D32" stroke-width="1.5" stroke-miterlimit="10" stroke-linecap="round" stroke-linejoin="round"/>
+                                <path d="M15.75 6.375V12.75C15.75 15 14.625 16.5 12 16.5H6C3.375 16.5 2.25 15 2.25 12.75V6.375C2.25 4.125 3.375 2.625 6 2.625H12C14.625 2.625 15.75 4.125 15.75 6.375Z" stroke="#292D32" stroke-width="1.5" stroke-miterlimit="10" stroke-linecap="round" stroke-linejoin="round"/>
+                                <path d="M11.7713 10.275H11.778" stroke="#292D32" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+                                <path d="M11.7713 12.525H11.778" stroke="#292D32" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+                                <path d="M8.99686 10.275H9.00359" stroke="#292D32" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+                                <path d="M8.99686 12.525H9.00359" stroke="#292D32" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+                                <path d="M6.22049 10.275H6.22723" stroke="#292D32" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+                                <path d="M6.22049 12.525H6.22723" stroke="#292D32" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+                            </svg>
+                            <span>                                                                                    <form id="applicationForm">
+                              <form id="applicationForm">
+                                <button type="button" style="border:none; background-color:transparent"  id="fetchBalanceSheet">Fetch Balance Sheet</button>
+                            </span>       
+                        </div>                                
+                    </div>
+                    <table class="transaction-history" id="transaction-history">
+                        <tr>
+                            <th>Year</th>
+                            <th>Month
+                                                                       
+                            </th>
+                            <th>Profit/Loss
+                                                                       
+                            </th>
+                            <th>Assets Value:
+                                                                      
+                            </th>
+                        </tr>
+                        
+                    </table>
+                </div> 
+                <div class="box spending-box " style="margin-top:20px">
+                  <div class="header-container">
+                      <h3 class="section-header">Application Result</h3>
+                      <svg width="24" height="25" viewBox="0 0 24 25" fill="none" xmlns="http://www.w3.org/2000/svg">
+                          <path d="M5 10.4166C3.9 10.4166 3 11.3541 3 12.5C3 13.6458 3.9 14.5833 5 14.5833C6.1 14.5833 7 13.6458 7 12.5C7 11.3541 6.1 10.4166 5 10.4166Z" stroke="#1A202C" stroke-width="1.5"/>
+                          <path d="M19 10.4166C17.9 10.4166 17 11.3541 17 12.5C17 13.6458 17.9 14.5833 19 14.5833C20.1 14.5833 21 13.6458 21 12.5C21 11.3541 20.1 10.4166 19 10.4166Z" stroke="#1A202C" stroke-width="1.5"/>
+                          <path d="M12 10.4166C10.9 10.4166 10 11.3541 10 12.5C10 13.6458 10.9 14.5833 12 14.5833C13.1 14.5833 14 13.6458 14 12.5C14 11.3541 13.1 10.4166 12 10.4166Z" stroke="#1A202C" stroke-width="1.5"/>
+                      </svg>                                                           
+                  </div>
+                  
+                  <div class="pie-chart__labels " id="applicationResult" style="text-align:center">
+                      
+                      
+                  </div>
+
+              </div>
+               
+                                
+            </div>
+            <div class="bottom-container__right">
+                <div class="box">
+                    <div class="">
+                      <style>
+                        label {
+    display: block;
+    margin-top: 10px;
+    padding: 5px 10px;
+    font-size: 15px;
+    font-weight: 600;
+    color: #000000;
+}
+
+input {
+    display: block;
+    width: 93%;
+    margin: auto;
+    padding: 10px;
+    border: 0;
+    border-radius: 20px;
+    font-family: "Roboto",sans-serif;
+    
+    border: 2px solid black;
+}
+
+input p {
+    color: #000000;
+    opacity: 1;
+}
+
+input.submit {
+    width: 100%;
+    padding: 10px;
+    font-size: 17px;
+    font-weight: 700;
+    color: #000000;
+    opacity: 1;
+    background-color: #1161EE;
+    cursor: pointer;
+}
+
+                      </style>
+                                          <h1 class="price">Start Application</h1>
+                                            <label for="businessName">Business Name:</label>
+                                            <input type="text" style="color: #000000 !important" id="businessName" required><br>
+                                        
+                                            <label for="yearEstablished">Year Established:</label>
+                                            <input type="number" id="yearEstablished" required><br>
+                                        
+                                            <label for="loanAmount">Loan Amount:</label>
+                                            <input type="number" id="loanAmount" required><br>
+                                            <center>
+                                            <label for="accountingProvider">Accounting Provider:</label>
+                                            <select id="accountingProvider">
+                                              <option value="Xero">Xero</option>
+                                              <option value="MYOB">MYOB</option>
+                                            </select><br>
+                                        
+                                           
+                                        
+                                           
+                                            <br>
+                                            
+                                          <span style="text-align:center"> 
+                                            <button type="button" style="border:2 px solid black; background-color:transparent; border-radius:5px; width: 150px; height:50px;"  id="submitApplication">Submit Application</button>
+                                          </span> 
+                                        </center>
+                                          </form>
+
+                                                                     
+                    </div>
+
+                   
+                </div>
+               
+            </div>
+        </div>
+    </main>
+</div>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/Chart.js/4.2.1/chart.min.js"></script>
+<script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
+<script>const navItems = document.querySelectorAll('.side-nav__item');
+    const removeClasses = () => {
+      navItems.forEach(eachItem => {
+        eachItem.classList.remove('side-nav__item-active');
+      });
+    }
+    
+    navItems.forEach(eachItem => {
+      eachItem.addEventListener('click', function() {
+          removeClasses();
+        eachItem.classList.add('side-nav__item-active');
+      });
+    });
+    
+    const ctx = document.getElementById('myChart');
+    
+    new Chart(ctx, {
+      type: 'bar',
+      data: {
+        labels: ['Jan', 'Feb', 'Mar', 'Apr', 'Mei', 'Jun', 'Jul', 'Aug', 'Sep', 'Oct', 'Nov', 'Des'],
+        datasets: [{
+          label: 'Expense',
+          data: [11, 3, 14, 7, 4, 15, 7, 9, 15, 13, 7, 14],
+          borderWidth: 1,
+          borderRadius: 30,
+          barThickness: 12,
+          backgroundColor: [
+            'rgba(114, 92, 255, 1)'
+          ],
+          borderColor: [
+            'rgba(114, 92, 255, 1)'
+          ],
+          hoverBackgroundColor: [
+            'rgba(28, 30, 35, 1)'
+          ],
+          hoverBorderColor: [
+            'rgba(28, 30, 35, 1)'
+          ],
+        }]
+      },
+      options: {
+        responsive: true,
+        scales: {
+          y: {
+            beginAtZero: true,
+            ticks: {
+                // Include a dollar sign in the ticks
+                callback: function(value, index, ticks) {
+                    return '$' + value + 'k';
+                },
+                stepSize: 5,
+            },
+          },
+          x: {
+            grid: {
+                display: false
+            }
+          }
+        },
+        plugins: {
+            legend: {
+              display:false,
+              labels: {
+                font: {
+                    size: 12,
+                    family: "'Plus Jakarta Sans', sans-serif",
+                    lineHeight: 18,
+                    weight: 600
+                }
+              }
+            }
+        }
+      }
+    });
+    
+    const ctx2 = document.getElementById('myChart2');
+    
+    new Chart(ctx2, {
+      type: 'doughnut',
+      data: {
+        datasets: [{
+          label: 'Overall Spending',
+          data: [8000, 2130, 1510, 2245, 4385, 1000],
+          borderRadius: 5,
+          cutout: 80,
+          backgroundColor: [
+            'rgb(235, 124, 166)',
+            'rgb(255, 172, 200)',
+            'rgb(204, 111, 248)',
+            'rgb(124, 92, 252)',
+            'rgb(92, 175, 252)',
+            'rgb(161, 169, 254)'
+          ],
+          hoverOffset: 4,
+          spacing: 8
+        }]
+      },
+      options: {
+        plugins: {
+          legend: {
+            display: false
+          }
+        }
+      }
+    });
+    </script>
+      <script src="frontend.js"></script>
+
+</body>
+</head>
+</html>
+</body>
+</html>
